@@ -1,9 +1,9 @@
 lbInput INP
 	BRZ lbProgramEnd
-	BRP POSNUM
+	BRP lbPosNum
 	BRA lbInput
 
-POSNUM STA TEMP
+lbPosNum STA TEMP
 	LDA TEMP
 	STA COUNTER
 	BRA SUM

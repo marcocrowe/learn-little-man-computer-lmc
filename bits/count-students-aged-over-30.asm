@@ -1,20 +1,24 @@
 ///
-// Count the number of students in the class that are over 30
+// Count the number of students in the class that are 30 and over
 ///
-lbLoop1		INP
-			BRZ lbFinish
-			SUB LIMIT
-			BRP lbCOUNT
-			BRA lbLoop1
+lbInput         INP
+                BRZ lbProgramEnd
+                BRP lbTest
+                BRA lbInput
 
-lbCOUNT		LDA varCount
-			ADD valOne
-			STA varCount
-			BRP lbLoop1
+lbTest          SUB valAgeLimit
+                BRP lbIncrement
+                BRA lbInput
 
-lbFinish	LDA varCount
-			OUT
-			HLT
+lbIncrement     LDA varCount
+                ADD valOne
+                STA varCount
+                BRA lbInput
 
-varCount	DAT 0
-LIMIT		DAT 30
+lbProgramEnd    LDA varCount
+                OUT
+                HLT
+
+valAgeLimit     DAT 30
+valOne          DAT 1
+varCount        DAT 0

@@ -1,4 +1,4 @@
-lbLoop1 LDA LIMIT
+lbInput LDA LIMIT
 	SUB valOne
 	STA LIMIT
 
@@ -6,10 +6,10 @@ lbLoop1 LDA LIMIT
 	ADD varSum
 	STA varSum
 
-	BRZ lbFinish
-	BRP lbLoop1
+	BRZ lbProgramEnd
+	BRP lbInput
 
-lbFinish LDA varSum
+lbProgramEnd LDA varSum
 	OUT
 	HLT
 varSum DAT 0

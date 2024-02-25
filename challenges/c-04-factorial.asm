@@ -2,13 +2,13 @@
 
           inp 
           sta final 
-          brz oneval
+          brz oneVal
           sub one
           sta iteration
           sta counter
           lda final
           sta num
-mult      lda iteration
+lbMultiply      lda iteration
           brz end
           sub one
           brz end
@@ -20,7 +20,7 @@ mult      lda iteration
           sta counter
           sub one
           brz next
-          bra mult
+          bra lbMultiply
 next      lda final
           sta num 
           lda iteration
@@ -29,11 +29,11 @@ next      lda final
           sta counter
           sub one
           brz end
-          bra mult
+          bra lbMultiply
 end       lda final
           out
           hlt
-oneval    lda one
+oneVal    lda one
           out
           hlt
 final     dat 0

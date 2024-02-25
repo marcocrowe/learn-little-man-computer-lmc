@@ -1,4 +1,4 @@
-lbLoop1 INP
+lbInput INP
 
 	ADD varSum
 	STA varSum
@@ -7,10 +7,10 @@ lbLoop1 INP
 	SUB valOne
 	STA LIMIT
 
-	BRZ lbFinish
-	BRP lbLoop1
+	BRZ lbProgramEnd
+	BRP lbInput
 
-lbFinish LDA varSum
+lbProgramEnd LDA varSum
 	OUT
 	HLT
 varSum DAT 0
