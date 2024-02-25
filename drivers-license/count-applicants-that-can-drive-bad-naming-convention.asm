@@ -1,18 +1,18 @@
-TOP			INP
-			BRZ PROGEND
+lbInput			INP
+			BRZ lbProgramEnd
 			BRP POSNUM
-			BRA TOP
+			BRA lbInput
 
 POSNUM		SUB LEGALAGE
 			BRP ADDTOTAL
-			BRA TOP
+			BRA lbInput
 
 ADDTOTAL	LDA varSum
 			ADD COUNTER
 			STA varSum
-			BRA TOP
+			BRA lbInput
 
-PROGEND		LDA varSum
+lbProgramEnd		LDA varSum
 			OUT
 			HLT
 

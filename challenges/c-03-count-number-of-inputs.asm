@@ -1,5 +1,6 @@
-// Count the number of inputs until 0 is entered and then output the count
-
+///
+/// Count the number of inputs until 0 is entered and then output the count
+///
 lbRestVars      STA varSum          // Accumulator has 0, and Sum is reset to 0
 
 lbInput         INP                 // Input a number
