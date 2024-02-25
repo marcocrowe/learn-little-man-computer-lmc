@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"maziac.asm-code-lens",
+		"yzhang.markdown-all-in-one",
+		"bierner.markdown-mermaid",
+		"davidanson.vscode-markdownlint",
+		"streetsidesoftware.code-spell-checker"
+	]
+}
