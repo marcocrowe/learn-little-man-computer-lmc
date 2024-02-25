@@ -21,4 +21,4 @@ lb_PEND LDA varSum
 NUM		DAT 0
 MtyNum 	DAT 0
 varSum DAT 0
-IVALUE DAT 1
+valOne DAT 1

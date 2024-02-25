@@ -26,6 +26,16 @@ Little Man Computer (LMC) Simulators
 - [Tiny-Dude](https://tinydude.tomwwright.com/) : Source code at [GitHub](https://github.com/tomwwright/tiny-dude "Source code at GitHub")
 - [LMC Simulator Applet (offline)](http://www.yorku.ca/sychen/research/LMC/LittleMan.html)
 
+## ProgrammingNaming Conventions
+
+To make your code more readable, you can use the following naming conventions:
+
+- For instructions use All Caps
+- For labels ,variables and constants use camelCase
+- Prefix labels with lb e.g. `lbLoop INP`
+- Prefix variables with var e.g. `varSum DAT 0`
+- Prefix constants with val e.g. `valOne DAT 0`
+
 ## Mini Challenges / Examples
 
 1. Write a program that loads and outputs the value 10.
@@ -41,7 +51,7 @@ Little Man Computer (LMC) Simulators
 11. A program that outputs the quotient of two input values.
 12. A program that outputs the remainder of two input values.
 
-## [Challenges](/challenges/ "challenges")
+## [Challenges](challenges/ "challenges")
 
 1. Write a program to ...
 2. Write a program to count the sum of descending numbers from an input down to 1. e.g.

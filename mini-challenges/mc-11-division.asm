@@ -24,4 +24,4 @@ lbEnd 	LDA divTOT
 NUM		 DAT
 divNum 	DAT
 divTOT 	DAT 0
-IVALUE 	DAT 1
+valOne 	DAT 1
