@@ -4,9 +4,9 @@
 			INP 
 			STA MtyNum
 
-lb_Multipy LDA TOTAL
+lb_Multipy LDA varSum
 			ADD NUM
-			STA TOTAL
+			STA varSum
 
 			LDA MtyNum
 			SUB IValue
@@ -15,10 +15,10 @@ lb_Multipy LDA TOTAL
 			BBZ lb_PEND
 			BRP lb_Multipy
 
-lb_PEND LDA TOTAL
+lb_PEND LDA varSum
 		OUT
 		HLT
 NUM		DAT 0
 MtyNum 	DAT 0
-TOTAL DAT 0
+varSum DAT 0
 IVALUE DAT 1
