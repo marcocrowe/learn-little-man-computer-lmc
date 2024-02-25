@@ -21,8 +21,9 @@ Note that in the following table 'xx' refers to a memory address (aka mailbox) i
 
 Little Man Computer (LMC) Simulators
 
+- [QcO's LMC Simulator](https://qco-dev.github.io/lmc/ "QcO's LMC Simulator") : Source code at [GitHub](https://github.com/QcO-dev/lmc "Source code at GitHub")
 - [LMC Simulator Applet](http://peterhigginson.co.uk/lmc/)
-- **[Tiny-Dude](https://tinydude.tomwwright.com/)** : Source code at [GitHub](https://github.com/tomwwright/tiny-dude)
+- [Tiny-Dude](https://tinydude.tomwwright.com/) : Source code at [GitHub](https://github.com/tomwwright/tiny-dude "Source code at GitHub")
 - [LMC Simulator Applet (offline)](http://www.yorku.ca/sychen/research/LMC/LittleMan.html)
 
 ## Mini Challenges / Examples
