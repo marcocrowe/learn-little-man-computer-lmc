@@ -1,7 +1,7 @@
 lbSum		LDA INPCount
 			SUB valOne
 			STA INPCount
-			BRZ lbProgramEnd
+			BRZ lbProgEnd
 
 			INP 
 			BRZ lbSum
@@ -16,7 +16,7 @@ ldAddPOS	ADD POSITIVE
 			BRA lbSum
 
 
-lbProgramEnd	LDA varSum
+lbProgEnd	LDA varSum
 			ADD POSITIVE
 			ADD NEGATIVE
 			STA varSum

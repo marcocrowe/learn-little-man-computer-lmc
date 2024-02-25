@@ -1,21 +1,21 @@
-lbInput			INP
-			BRZ lbProgramEnd
-			BRP POSNUM
+lbInput		INP
+			BRZ lbProgEnd
+			BRP posNum
 			BRA lbInput
 
-POSNUM		SUB LEGALAGE
-			BRP ADDTOTAL
+posNum		SUB legalAGE
+			BRP addTOTAL
 			BRA lbInput
 
-ADDTOTAL	LDA varSum
-			ADD COUNTER
-			STA varSum
+addTOTAL	LDA varCount
+			ADD valOne
+			STA varCount
 			BRA lbInput
 
-lbProgramEnd		LDA varSum
+lbProgEnd	LDA varCount
 			OUT
 			HLT
 
-varSum DAT 0
-COUNTER DAT 1
-LEGALAGE DAT 17
+varCount	DAT 0
+valOne		DAT 1
+legalAGE	DAT 17
