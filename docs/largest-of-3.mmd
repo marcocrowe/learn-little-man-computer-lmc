@@ -1,0 +1,17 @@
+flowchart TD
+    InputA(Input A) --> InputB
+    InputB(Input B) --> InputC
+    InputC(Input C) --> CheckCB
+    CheckCB{C - B >= 0}
+    CheckCB -->|False<br/><i>B is larger</i>| CheckBA
+    CheckCB -->|True<br/><i>C is larger</i> | CheckCA
+    CheckCA{C - A >= 0}
+    CheckCA -->|False<br/><i>A is larger</i>| ACB
+    CheckCA -->|True<br/><i>C is larger</i> | BCA
+    CheckBA{B - A >= 0}
+    CheckBA -->|False<br/><i>A is larger</i>| ABC
+    CheckBA -->|True<br/><i>B is larger</i> | BAC
+    ABC[A is largest]-->ABCMath[A >= B >= C]
+    ACB[A is largest]-->ACBMath[A >= C >= B]
+    BAC[B is largest]-->BACMath[B >= A >= C]
+    BCA[C is largest]-->BCAMath[B <= C >= A]
