@@ -1,6 +1,17 @@
 // This program takes user input and calculates the sum of descending
 // numbers from the input down to 1, and then outputs the result.
-lbRestVars      STA varSum         // Accumulator has 0, and Sum is reset to 0
+//
+// int sum = 0;
+// const int one = 1;
+// int input;
+// cin >> input; 
+// do {
+//     sum += number;
+//     number = number - one;
+// } while (number > 0);
+// cout << sum;
+
+lbResetVars     STA varSum         // Accumulator has 0, and Sum is reset to 0
                 INP                // Take user input and store it in Accumulator
 
 lbAddNumber     STA varNumber      // Store the input value in memory location varNumber

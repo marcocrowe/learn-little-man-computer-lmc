@@ -26,7 +26,7 @@ Little Man Computer (LMC) Simulators
 - [Tiny-Dude](https://tinydude.tomwwright.com/) : Source code at [GitHub](https://github.com/tomwwright/tiny-dude "Source code at GitHub")
 - [LMC Simulator Applet (offline)](http://www.yorku.ca/sychen/research/LMC/LittleMan.html)
 
-## ProgrammingNaming Conventions
+## Programming Naming Conventions
 
 To make your code more readable, you can use the following naming conventions:
 

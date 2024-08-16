@@ -5,10 +5,10 @@
 ///
 lbUserInput			INP
 					BRZ lbProgramEnd
-					BRP lbTest
+					BRP lbTestLower
 					BRA lbUserInput
 
-lbTest				STA varAttempt
+lbTestLower			STA varAttempt
 					SUB varCurrentRecord
 					BRP lbNewRecord
 					BRA lbUserInput

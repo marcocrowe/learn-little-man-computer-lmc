@@ -1,7 +1,7 @@
 ///
 /// Count the number of inputs until 0 is entered and then output the count
 ///
-lbRestVars      STA varCount        // Accumulator has 0, and Count is reset to 0
+lbResetVars      STA varCount        // Accumulator has 0, and Count is reset to 0
 
 lbInput         INP                 // Input a number
                 BRZ lbProgramEnd    // If the input is zero, exit the program
