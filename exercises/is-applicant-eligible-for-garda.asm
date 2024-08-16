@@ -21,6 +21,7 @@ lbAddGuard          LDA varAccepted  // Load the number of accepted garda (`varA
                     ADD valOne       // Add 1 (`valOne`) to the number of accepted garda
                     STA varAccepted  // Store the updated number of accepted garda to `varAccepted`
                     BRA lbInput      // Branch to `lbInput` to input the next applicant's age
+
 lbExit              LDA varAccepted  // Load the number of accepted garda (`varAccepted`) into the Accumulator
                     OUT              // Output the Accumulator value
                     HLT              // Halt the program
