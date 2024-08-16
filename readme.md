@@ -64,3 +64,13 @@ To make your code more readable, you can use the following naming conventions:
    [solution](challenges/c-02-function-sum-descending-numbers-of-n-to-1.asm "solution")
 
 3. Write a program to count the number of inputs. [solution](challenges/c-03-count-number-of-inputs.asm "solution")
+
+## [Exercises](exercises/ "exercises")
+
+| Number | Exercise | Description                                                                  |Solution |
+|--------|----------|------------------------------------------------------------------------------|---------|
+| 1      | [Is Applicant Eligible for Garda](exercises/is-applicant-eligible-for-garda.md) | Write a program to check if a Guard is eligible to apply. | [solution](exercises/is-applicant-eligible-for-garda.asm) |
+
+---
+
+Copyright &copy; 2024 [Mark Crowe](https://github.com/marcocrowe "Mark Crowe"). All Rights Reserved.
